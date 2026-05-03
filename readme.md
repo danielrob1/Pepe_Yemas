@@ -80,22 +80,23 @@ streamlit run app.py
 
 ## 🛠️ Tecnologías Utilizadas
 
-*   **YOLOv8 (Ultralytics)**: Motor principal de detección de objetos.
+*   **YOLOv11s (Ultralytics)**: Motor principal de detección de objetos.
 *   **SAHI**: Procesamiento por secciones (slicing) de 800x800.
 *   **Streamlit**: Interfaz de usuario moderna.
 *   **PyTorch**: Framework configurado para aceleración por hardware (CUDA 12.1).
 
 ---
 
----
 
-## 🛠️ Información de Hardware adiccional
-Para el entrenamiento del ultimo modelo de detección, se ha empleado el siguiente hardware
+## 🛠️ Información de Hardware adicional
+Para el entrenamiento del último modelo de detección, se ha empleado el siguiente hardware:
 
 *   **NVIDIA RTX 3060 Ti**: GPU
 *   **16 GB RAM DDR4**: Memoria RAM
 *   **Intel Core i5-11400F**: CPU
 
+Con estas características, el modelo ha tenido un tiempo de entrenamiento aproximado de **6 horas**
+
 ---
 
-**Pepe AI** - *Transformando la viticultura con Inteligencia Artificial.*
+**Pepe AI** - *By AGM Global*
