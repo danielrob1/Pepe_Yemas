@@ -40,9 +40,9 @@ pip install -r requirements.txt
 Para que el proyecto funcione correctamente, debes descargar los archivos necesarios, **descomprimirlos** y ubicarlos en la raíz del proyecto.
 
 1.  Descarga los archivos `.zip` de los siguientes enlaces:
-    *   **dataset.zip**: [INSERTAR LINK AQUÍ]
-    *   **sliced_dataset_high_res.zip**: [INSERTAR LINK AQUÍ]
-    *   **visualizacion_dataset_completo.zip**: [INSERTAR LINK AQUÍ]
+    *   **dataset.zip**: [[Descargar](https://drive.google.com/file/d/1FwQ556rmGgQcJcQZ5DbFGxkW7GTPbsQ-/view?usp=sharing)]
+    *   **sliced_dataset_high_res.zip**: [[Descargar](https://drive.google.com/file/d/1CRA3DJ7NWFNbPOQoTwq-Y0TGr9TqD4pE/view?usp=sharing)]
+    *   **visualizacion_dataset_completo.zip**: [[Descargar](https://drive.google.com/file/d/1xHniUjR7b9Ycoa4OokAOJ09Zg_6GkOjq/view?usp=sharing)]
 2.  **Descomprime** cada archivo de modo que las carpetas aparezcan directamente en el directorio principal.
 3.  Asegúrate de que la estructura de archivos final sea la siguiente:
 ```text
