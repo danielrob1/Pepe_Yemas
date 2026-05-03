@@ -1,0 +1,26 @@
+# Entorno virtual
+.venv/
+env/
+venv/
+ENV/
+
+# Python (archivos temporales)
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Streamlit
+.streamlit/
+
+# Carpetas de datos y resultados (Para no subir gigas de fotos a Git)
+outputs/
+dataset/
+sliced_dataset_high_res/
+visualizacion_dataset_completo/
+temp_input.jpg
+temp_web/
+
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,20 @@
+train: ../sliced_dataset_high_res/train/images
+val: ../sliced_dataset_high_res/val/images
+test: ../sliced_dataset_high_res/test/images
+
+#train: ../sliced_dataset/train/images
+#val: ../sliced_dataset/val/images
+#test: ../sliced_dataset/test/images
+
+
+nc: 2
+names: ['cepa', 'yema']
+
+roboflow:
+  workspace: daniels-workspace-epldf
+  project: daniels-workspace-epldf
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/daniels-workspace-epldf/daniels-workspace-epldf/dataset
+
+
