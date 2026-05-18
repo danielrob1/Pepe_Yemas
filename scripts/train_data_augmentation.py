@@ -1,21 +1,24 @@
 from ultralytics import YOLO
 
 def train():
-    # Usamos YOLO11 para una mejor arquitectura de extracción de características
-    model = YOLO("yolo11s.pt") 
+    # Usamos YOLO26s para una mejor arquitectura de extracción de características
+    model = YOLO("yolo26s.pt") 
 
     model.train(
         data="data.yaml",
         epochs=150,           # Subimos a 150 para que le dé tiempo a aprender los nudos
         imgsz=1280,           # 1280 para entrenar con alta resolución
         batch=-1,             # 'batch=-1' hará que YOLO use el potencial optimo de la GPU
-        name="yemas_model_v2_augmentation",
-        device="0",           # Usar la GPU para el entrenamiento
+        name="yemas_model_final_v3_iou",
+        device="0",
+        save_period=1,           # Usar la GPU para el entrenamiento
         
         # --- MEJORAS PARA NUDOS Y DETALLE ---
         cls=2.0,              # Aumentamos el peso de la clasificación (evita confundir yema/nudo)
         box=7.5,              # Ajustamos la precisión de las cajas
         patience=40,          # Si deja de mejorar en 40 épocas, se detiene solo
+        iou =0.5,
+        label_smoothing= 0.1,
         
         # --- DATA AUGMENTATION (Anti-ruido y sombras) ---
         hsv_v=0.4,            # Variación de brillo (para las sombras de tus fotos)
@@ -27,4 +30,4 @@ def train():
     )
 
 if __name__ == "__main__":
-    train()
+    train() 
