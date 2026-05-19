@@ -25,7 +25,7 @@ VIS_BASE_DIR = "visualizacion_dataset_racimos"
 @st.cache_resource
 def load_model(_conf):
     # Ruta al modelo de racimos
-    model_path = os.path.join('runs', 'detect', 'racimos_sliced_yolo26_v1', 'weights', 'best.pt')
+    model_path = os.path.join('runs', 'detect', 'racimos_sliced_v3_b', 'weights', 'best.pt')
     
     if not os.path.exists(model_path):
         st.error(f"❌ No se encontró el modelo en: {model_path}")

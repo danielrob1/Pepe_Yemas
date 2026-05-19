@@ -19,7 +19,7 @@ conf_val = st.sidebar.select_slider(
 # --- CARGA DEL MODELO ---
 @st.cache_resource
 def load_model():
-    model_path = os.path.join('runs', 'detect', 'racimos_yolo26_v2', 'weights', 'best.pt')
+    model_path = os.path.join('runs', 'detect', 'racimos_sliced_v3', 'weights', 'best.pt')
     if not os.path.exists(model_path):
         st.error(f"❌ No se encontró el modelo en: {model_path}")
         st.stop()
@@ -40,7 +40,7 @@ if uploaded_file is not None:
     
     with st.spinner("Pepe está analizando la imagen..."):
         # EJECUTAR PREDICCIÓN
-        results = model.predict(source=img, conf=conf_val, imgsz=1024, device='cuda:0')
+        results = model.predict(source=img, conf=conf_val, imgsz=640, device='cuda:0')
         result = results[0]
 
         # --- MOSTRAR COMPARATIVA ---

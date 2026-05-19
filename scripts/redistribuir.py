@@ -4,7 +4,7 @@ import shutil
 
 # --- CONFIGURACIÓN ---
 base_path = "train"  # Tu carpeta actual
-new_base = "dataset_yemas_final_v3" # La carpeta nueva que vamos a crear
+new_base = "dataset_racimos_v2" # La carpeta nueva que vamos a crear
 
 images_source = os.path.join(base_path, "images")
 labels_source = os.path.join(base_path, "labels")

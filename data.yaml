@@ -1,9 +1,9 @@
-train: ../sliced_dataset_yemas_final_v3/train/images
-val: ../sliced_dataset_yemas_final_v3/val/images
-test: ../sliced_dataset_yemas_final_v3/test/images
+train: ../sliced_dataset_racimos_v3/train/images
+val: ../sliced_dataset_racimos_v3/val/images
+test: ../sliced_dataset_racimos_v3/test/images
 
 nc: 1
-names: ['Yemas']
+names: ['Racimos2']
 
 roboflow:
   workspace: pruebas-daniel

@@ -30,6 +30,10 @@ sliced_dataset_yemas_final_v3/
 runs/detect/yemas_model_final_v3_iou/
 runs/detect/racimos_sliced_yolo26_v1/
 runs/detect/yemas_model_final_v3/
+runs/detect/racimos_v2/
+runs/detect/racimos_sliced_v3/
+dataset_racimos_v2/
+sliced_dataset_racimos_v3/
 dataset_yemas_Final_v3/
 temp_input.jpg
 temp_web/

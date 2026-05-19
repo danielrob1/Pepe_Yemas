@@ -133,11 +133,11 @@ def slice_image(img, boxes, size=800, stride=400):
 
 
 def procesar_split(split):
-    img_dir = f"dataset_yemas_final_v3/images/{split}"
-    label_dir = f"dataset_yemas_final_v3/labels/{split}"
+    img_dir = f"dataset_racimos_v2/images/{split}"
+    label_dir = f"dataset_racimos_v2/labels/{split}"
 
-    out_img_dir = f"sliced_dataset_yemas_final_v3/{split}/images"
-    out_lbl_dir = f"sliced_dataset_yemas_final_v3/{split}/labels"
+    out_img_dir = f"sliced_dataset_racimos_v3/{split}/images"
+    out_lbl_dir = f"sliced_dataset_racimos_v3/{split}/labels"
 
     os.makedirs(out_img_dir, exist_ok=True)
     os.makedirs(out_lbl_dir, exist_ok=True)
